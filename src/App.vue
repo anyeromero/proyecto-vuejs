@@ -1,12 +1,14 @@
 <script setup>
-import Contador from './components/Contador.vue'
-
+import MainViews from './views/MainViews.vue';
 </script>
 
 <template>
- <Contador></Contador>
+    <MainViews></MainViews>
+ 
 
- <Contador></Contador>
+
+
+
 </template>
 
 <style scoped>
