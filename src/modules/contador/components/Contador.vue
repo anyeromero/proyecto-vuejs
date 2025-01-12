@@ -12,10 +12,11 @@ const incrementar = () => {
 }
 
 const decrementar = () => {
+  
   if (contador.value <= 0) {
     return 
   }
-  contador.value--;
+  contador.value--
 }
 
 </script>
