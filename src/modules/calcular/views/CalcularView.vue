@@ -9,6 +9,10 @@ const valorCalculado = computed(() => {
     return valor.value * 3;
 });
 
+const mostrarElemento = computed(() => {
+    return valor.value > 10;
+})
+
 </script>
 
 <template>
@@ -16,8 +20,9 @@ const valorCalculado = computed(() => {
 
     <input type="text"  v-model="valor" />
     {{ valorCalculado}}
-    <ResultadoSection :resultado="valorCalculado"></ResultadoSection>
-    
+    <ResultadoSection v-if="mostrarElemento" :resultado="valorCalculado"></ResultadoSection>
+    <div v-else-if="isNaN(valor)">Debe ser un numero para calcular </div>
+    <div v-else>Aqui no se muestra nada</div>
 </template>
 
 <style scoped>
