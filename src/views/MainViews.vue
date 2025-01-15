@@ -2,6 +2,7 @@
     import Sidebar from '../components/Sidebar.vue';
     import Header from '@/components/Header.vue';
     import { ref } from 'vue';
+    
 
 
     const texto = ref('');
@@ -17,6 +18,7 @@
         
             <input type="texto" v-model="texto">
             <h1>{{ texto }}</h1>
+
             <RouterView></RouterView>
         </div>
     </div>

@@ -26,9 +26,10 @@ const registrarStore = useRegistrarStore();
         <h3>Nombre: {{ registrarStore.nombre }} </h3>
         <h3>Email: {{ registrarStore.email }}</h3>
         <ul>
-            <li><RouterLink to="/contador">Contador</RouterLink></li>
-            <li><RouterLink to="/lista-de-tareas">Lista de Tareas</RouterLink></li>
+            <li><router-link to="/contador">Contador</router-link></li>
+            <li><router-link to="/lista-de-tareas">Lista de Tareas</router-link></li>
             <li><router-link to="/registrar">Registrar</router-link></li> 
+            <li><router-link to="/calcular">Calcular</router-link></li> 
         </ul>
       
         
